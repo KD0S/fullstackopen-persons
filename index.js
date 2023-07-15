@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const morgan = require('morgan')
 const Person = require('./models/Person')
 
 const errorHandler = (error, request, response, next) => {
